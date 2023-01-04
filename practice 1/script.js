@@ -39,14 +39,17 @@ btn.textContent = "Click Me";
 father.appendChild(btn);
 
 var clicked = 0;
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
   console.log("clicked");
+  // e its the event itself
+  console.log(e)
   clicked++;
   counter.textContent = `I've been clicked ${clicked} times`;
 });
 
 const counter = document.createElement("div");
 counter.textContent = `I've been clicked ${clicked} times`;
+counter.setAttribute('style','font-size:30px')
 father.appendChild(counter);
 
 body.appendChild(father);
