@@ -1,5 +1,5 @@
 const trail = document.querySelector(".trail");
-window.addEventListener("mousemove", (e) => {
+window.addEventListener("mousedown", (e) => {
   console.log(`Mouse is at X ${e.pageX} and Y ${e.pageY}`);
   trail.setAttribute(
     "style",
